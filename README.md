@@ -15,8 +15,10 @@ npm install
 
 ## Usage
 ```
-$ GCLOUD_PROJECT_ID=foo ./convert.sh input/
-$ cat transcripts/`ls transcripts/ | head -n1`
+Put files in data/input.  There's nothing smart here about not repeating duplicate work.
+
+$ GCLOUD_PROJECT_ID=foo ./convert.sh data/input/
+$ cat data/transcripts/`ls data/transcripts/ | head -n1`
 {
   "status": "ok",
   "response": [
